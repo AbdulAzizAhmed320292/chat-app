@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chattapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCLXF5gkcJf0Or2K-JmZfX0Yt6c1nyDi8c",
+          authDomain: "chat-app-f4d60.firebaseapp.com",
+          databaseURL: "https://chat-app-f4d60.firebaseio.com",
+          projectId: "chat-app-f4d60",
+          storageBucket: "chat-app-f4d60.appspot.com",
+          messagingSenderId: "762359146160",
+          appId: "1:762359146160:web:4ab977221c7ec35ed1fd75",
+          measurementId: "G-DQH0LG08XH"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+       
+      </script>
+
+</head>
+<body>
+<center>
+    
+     <div class="main-container">
+         <div class="main-bar">
+             <h3 id="name">Chatt App </h3>
+         </div>
+         <div class="msg-container">
+             <ul id="message-li">
+                 
+             </ul>
+
+         </div>
+
+         <div class="input-container">
+             <input type="text" name="message" id="message" placeholder="Enter Text Message"> <button id="submit" onclick="send()">submit</button>
+         </div>
+     </div> 
+    </center>
+</body>
+<script src="chattapp.js"></script>
+</html>
